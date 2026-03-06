@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-kfc-red: #E4002B;
+  --color-kfc-black: #000000;
+  --color-kfc-white: #FFFFFF;
+  --color-kfc-gray: #F8F8F8;
+}
+
+@layer base {
+  body {
+    @apply bg-kfc-gray text-kfc-black font-sans;
+  }
+  
+  h1, h2 {
+    @apply font-display uppercase tracking-tight;
+  }
+
+  h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.kfc-stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    #E4002B,
+    #E4002B 10px,
+    #FFFFFF 10px,
+    #FFFFFF 20px
+  );
+}
+
+.glass-nav {
+  @apply bg-white/80 backdrop-blur-md border-b border-black/5;
+}
+

@@ -1,0 +1,5 @@
+{
+  "name": "KFC Digital Experience",
+  "description": "A modern, responsive digital storefront for KFC, featuring menu browsing, special offers, and store locations.",
+  "requestFramePermissions": ["geolocation"]
+}
